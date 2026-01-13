@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olutola Abigail | Digital Business Card</title>
+    
+    <link rel="stylesheet" href="style.css">    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon_io/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Connect with Olutola Abigail, a professional [Career]. View content, social links, and contact information.">
+    <link rel="canonical" href="https://emmystack01.github.io/i-am-olutolaabigail/index.html">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Olutola Abigail">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Olutola Abigail - Digital Card">
+    <meta property="og:description" content="Professional links and contact info for Olutola Abigail.">
+    <meta property="og:url" content="https://emmystack01.github.io/i-am-olutolaabigail/index.html">
+    <meta property="og:image" content="https://emmystack01.github.io/i-am-olutolaabigail/og-image.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Olutola Abigail | Digital Card">
+    <meta name="twitter:image" content="https://emmystack01.github.io/i-am-olutolaabigail/og-image.png">
+
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="qrcode.js" as="script">
+</head>
+<body>
+
+    <div class="container">
+        <main>
+        
+            <div class="profile-wrapper">
+                <img src="Profile Picture.jpg" alt="Profile Picture" class="profile-pic">
+                <div class="status-dot"></div>
+            </div>
+
+            <h1>Olutola Abigail</h1>
+            <p class="career">Communication & Mindset Strategist</p>
+            <p class="bio">I help people recognize the patterns that shape their thoughts, emotions, and behaviors, and empower them to shift these patterns with clarity, self-awareness, and structured strategies.</p>
+
+            <div class="links-gap">
+                <a href="https://chat.whatsapp.com/DJxBVqPAD2Q1hXcKnqPa27" class="link-card">Join My Mindset Mastery Group</a>
+                <a href="https://www.instagram.com/oyetundeabigail?igsh=N2c4eXlrdXZhMzk2&utm_source=qr" class="link-card">Checkout My Informative Posts (on IG)</a>
+                <a href="https://www.facebook.com/share/17rBUVkgzz/?mibextid=wwXIfr" class="link-card">Follow Mindset Mastery on Facebook </a>
+                <a href="tola6436@gmail.com?subject=Mail%20on%20Communication%20&%20Mindset" class="link-card">Mail Me</a>
+            </div>
+
+        
+            
+            <!--SAVE CONTACT-->
+            <button class="vcard-btn" onclick="downloadVCard()">💾 Save Contact</button>
+            <!--SHARE PROFILE-->
+            <button class="share-btn" onclick="shareProfile()">
+                <i class="ri-share-forward-line"></i> Share Profile
+            </button>
+            <!--QR CODE-->
+            <button class="qr-trigger" onclick="toggleQR()">
+                <i class="ri-qr-code-line"></i> Show My QR
+            </button>
+
+            <div id="qr-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="toggleQR()">&times;</span>
+                    <h3>Scan to Connect</h3>
+                    <div id="qrcode"></div> </div>
+            </div>   
+        </main>
+        
+        <footer>
+            <div class="site-footer">
+                <p class="copyright">&copy; <span id="year"></span> Olutola Abigail. All Rights Reserved.</p>
+                <p class="branding">
+                    Built by <a href="https://x.com/Emmy_STACK01" target="_blank" rel="noopener noreferrer" >Emmy STACK01<i class="ri-twitter-x-fill"></i></a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        /*SAVE CONTACT*/
+        function downloadVCard() {
+            // Data would be customized for your client
+            const vcardData = 
+            `BEGIN:VCARD
+            VERSION:3.0
+            FN:Olutola Abigail
+            TITLE:Communication & Mindset Strategist
+            EMAIL;TYPE=INTERNET,WORK:tola6436@gmail.com
+            TEL;TYPE=WORK,CELL,VOICE:+2348109577121
+            END:VCARD`;
+
+            const blob = new Blob([vcardData], { type: 'text/vcard' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = 'Alex_Rivera.vcf';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+        /*SHARE PROFILE*/
+        async function shareProfile() {
+            const shareData = {
+                title: document.title,
+                text: 'Check out this professional profile!',
+                url: window.location.href
+            };
+
+            try {
+                if (navigator.share) {
+                    await navigator.share(shareData);
+                } else {
+                    // Fallback for browsers that don't support Web Share API
+                    await navigator.clipboard.writeText(window.location.href);
+                    alert('Link copied to clipboard!');
+                }
+            } catch (err) {
+                console.log('Error sharing:', err);
+            }
+        }
+        /*AUTO-CHANGE-YEAR*/
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+<script src="qrcode.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><!--QR CODE-->
+</body>
+</html>
