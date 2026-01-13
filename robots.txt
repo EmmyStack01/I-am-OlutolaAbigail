@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://emmystack01.github.io/i-am-[client-name]/sitemap.xml
+
+Sitemap: https://emmystack01.github.io/I-am-OlutolaAbigail/sitemap.xml
