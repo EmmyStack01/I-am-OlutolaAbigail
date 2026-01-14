@@ -30,20 +30,32 @@ A high-performance, mobile-first landing page designed for professionals to show
     * Update social links in the .links-gap section.
     * Update the vcardData constant in the script for the client's info.
 
-## 📄 License
+## 📄 License & Terms of Use
 
 This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International (CC-BY-NC-ND 4.0).
 
-Under this license, you are free to:
-* Share — copy and redistribute the material in any medium or format.
+# ⚖️ Summary of Terms
 
-Under the following terms:
-* Attribution — You must give appropriate credit (Built by Emmy STACK01).
-* NonCommercial — You may not use the material for commercial purposes (selling the code *as a template* to others). 
-* NoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified material.
+Under this license, you are free to Share (copy and redistribute) the material provided you follow these terms:
+*Attribution (BY): You must give appropriate credit. The "Built by Emmy STACK01" link in the footer must remain visible and intact.
 
-> *Note: This license applies to the source code template. Usage for personal/client landing pages is permitted as long as the "Built by" credit remains intact.*
+*Non-Commercial (NC): You may not use this material for commercial purposes, such as selling the code as a template to others.
+
+*NoDerivatives (ND): If you remix, transform, or build upon the material, you may not distribute the modified material.
+
+>*[!IMPORTANT]
+Compliance Notice: Removing, hiding, or masking the developer attribution in the footer via CSS or code modification is a direct violation of this license.*
+
+# 🏷 Commercial White-Label License
+Usage for personal or client landing pages is permitted for free only if the "Built by" credit remains intact.
+
+If you or your client wish to remove the developer branding for a 100% white-labeled professional experience, you must purchase a Commercial License. This license grants you the legal right to:
+1. Remove the "Built by Emmy STACK01" footer credit.
+2. Modify the design for specific brand requirements.
+3. Receive a formal Certificate of License for your client records.
+To upgrade your license, please contact: [millise112@gmail.com]
 
 ---
 
-Built with ⚡ by Emmy STACK01
+Built with ⚡️ by Emmy STACK01
+
