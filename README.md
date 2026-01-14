@@ -34,7 +34,7 @@ A high-performance, mobile-first landing page designed for professionals to show
 
 This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International (CC-BY-NC-ND 4.0).
 
-# ⚖️ Summary of Terms
+### ⚖️ Summary of Terms
 
 Under this license, you are free to Share (copy and redistribute) the material provided you follow these terms:
 *Attribution (BY): You must give appropriate credit. The "Built by Emmy STACK01" link in the footer must remain visible and intact.
@@ -46,7 +46,7 @@ Under this license, you are free to Share (copy and redistribute) the material p
 >*[!IMPORTANT]
 Compliance Notice: Removing, hiding, or masking the developer attribution in the footer via CSS or code modification is a direct violation of this license.*
 
-# 🏷 Commercial White-Label License
+### 🏷 Commercial White-Label License
 Usage for personal or client landing pages is permitted for free only if the "Built by" credit remains intact.
 
 If you or your client wish to remove the developer branding for a 100% white-labeled professional experience, you must purchase a Commercial License. This license grants you the legal right to:
@@ -58,4 +58,5 @@ To upgrade your license, please contact: [millise112@gmail.com]
 ---
 
 Built with ⚡️ by Emmy STACK01
+
 
