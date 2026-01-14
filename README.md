@@ -8,9 +8,7 @@ A high-performance, mobile-first landing page designed for professionals to show
 
 * Live Status Indicator: A pulsing "online" dot to show real-time availability.
 * VCard Integration: One-tap "Save Contact" button that downloads a .vcf file directly to the user's phone.
-* Lead Generation: Integrated newsletter signup form powered by Formspree.
 * Native Sharing: Uses the Web Share API to trigger the device's native sharing menu.
-* Clipboard Functionality: "Click to Copy" feature for crypto wallets or handles.
 * SEO Optimized: Includes sitemap.xml, robots.txt, and full Open Graph (OG) metadata.
 * Performance: Lightweight HTML/CSS/JS with preloaded assets for instant loading.
 
@@ -18,21 +16,19 @@ A high-performance, mobile-first landing page designed for professionals to show
 
 * HTML5 - Semantic structure and metadata.
 * CSS3 - Custom Flexbox layout, responsive design, and animations.
-* JavaScript (ES6+) - Clipboard API, Web Share API, and VCard generation.
+* JavaScript (ES6+) - Web Share API, and VCard generation.
 * Remix Icons - Modern, lightweight iconography.
 
 ## 🚀 Installation & Customization
 
 1.  Clone the Repository:
    
-    git clone [https://github.com/emmystack01/i-am-](https://github.com/emmystack01/i-am-)[client-name].git
+    git clone https://github.com/emmystack01/I-am-OlutolaAbigail.git
     
 2.  Update Details:
     * Change the profile image in index.html.
     * Update social links in the .links-gap section.
     * Update the vcardData constant in the script for the client's info.
-3.  Form Setup:
-    * Replace the action URL in the newsletter form with your unique Formspree ID.
 
 ## 📄 License
 
@@ -49,4 +45,5 @@ Under the following terms:
 > *Note: This license applies to the source code template. Usage for personal/client landing pages is permitted as long as the "Built by" credit remains intact.*
 
 ---
+
 Built with ⚡ by Emmy STACK01
