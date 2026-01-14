@@ -92,35 +92,28 @@
     <script>
       /* SAVE CONTACT */
         function downloadVCard() {
-            // Each line MUST start at the very edge of the left margin. 
-            // Do NOT indent these lines or the spaces will break the file.
-            const vcardData =`
-        BEGIN:VCARD
-        VERSION:3.0
-        FN:Olutola Abigail
-        TITLE:Communication & Mindset 
-        Strategist
-        EMAIL;TYPE=INTERNET,WORK:
-        tola6436@gmail.com
-        TEL;TYPE=WORK,CELL,VOICE:
-        +2348109577121
-        END:VCARD
-        `;
-        
-            const blob = new Blob([vcardData], { type: 'text/vcard' });
+            // We join the lines with \r\n to ensure every phone recognizes the new line
+            const vcardData = [
+                "BEGIN:VCARD",
+                "VERSION:3.0",
+                "FN:Olutola Abigail",
+                "TITLE:Communication & Mindset Strategist",
+                "EMAIL;TYPE=INTERNET,WORK:tola6436@gmail.com",
+                "TEL;TYPE=WORK,CELL,VOICE:+2348109577121",
+                "END:VCARD"
+            ].join("\r\n");
+
+            const blob = new Blob([vcardData], { type: 'text/vcard;charset=utf-8' });
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
-            a.style.display = 'none';
+            
+            // Using a simple filename without spaces is safer for mobile downloads
+            a.download = 'Olutola_Abigail.vcf';
             a.href = url;
-            a.download = 'OlutolaAbigail.vcf';
-            document.body.appendChild(a);
             a.click();
             
-            // Clean up to prevent memory issues
-            setTimeout(() => {
-                document.body.removeChild(a);
-                window.URL.revokeObjectURL(url);
-            }, 100);
+            // Clean up
+            setTimeout(() => window.URL.revokeObjectURL(url), 100);
         }
         /* SHARE PROFILE */
         async function shareProfile() {
@@ -150,6 +143,7 @@
 </body>
 
 </html>
+
 
 
 
