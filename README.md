@@ -37,11 +37,11 @@ This project is licensed under the Creative Commons Attribution-NonCommercial-No
 ### ⚖️ Summary of Terms
 
 Under this license, you are free to Share (copy and redistribute) the material provided you follow these terms:
-*Attribution (BY): You must give appropriate credit. The "Built by Emmy STACK01" link in the footer must remain visible and intact.
+* Attribution (BY): You must give appropriate credit. The "Built by Emmy STACK01" link in the footer must remain visible and intact.
 
-*Non-Commercial (NC): You may not use this material for commercial purposes, such as selling the code as a template to others.
+* Non-Commercial (NC): You may not use this material for commercial purposes, such as selling the code as a template to others.
 
-*NoDerivatives (ND): If you remix, transform, or build upon the material, you may not distribute the modified material.
+* NoDerivatives (ND): If you remix, transform, or build upon the material, you may not distribute the modified material.
 
 >*[!IMPORTANT]
 Compliance Notice: Removing, hiding, or masking the developer attribution in the footer via CSS or code modification is a direct violation of this license.*
@@ -58,5 +58,6 @@ To upgrade your license, please contact: [millise112@gmail.com]
 ---
 
 Built with ⚡️ by Emmy STACK01
+
 
 
