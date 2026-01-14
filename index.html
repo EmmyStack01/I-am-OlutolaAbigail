@@ -94,23 +94,22 @@
         function downloadVCard() {
             // Data would be customized for your client
             const vcardData = 
-            `BEGIN:VCARD
-            VERSION:3.0
-            FN:Olutola Abigail
-            TITLE:Communication & Mindset Strategist
-            EMAIL;TYPE=INTERNET,WORK:tola6436@gmail.com
-            TEL;TYPE=WORK,CELL,VOICE:+2348109577121
-            END:VCARD`;
+            `BEGIN:VCARDVERSION:3.0FN:Olutola AbigailTITLE:Communication & Mindset StrategistEMAIL;TYPE=INTERNET,WORK:tola6436@gmail.comTEL;TYPE=WORK,CELL,VOICE:+2348109577121END:VCARD`;
 
             const blob = new Blob([vcardData], { type: 'text/vcard' });
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.style.display = 'none';
             a.href = url;
-            a.download = 'Olutola Abigail.vcf';
+            a.download = 'Olutola_Abigail.vcf';
             document.body.appendChild(a);
             a.click();
             window.URL.revokeObjectURL(url);
+             // Cleanup
+            setTimeout(() => {
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+            }, 100);
         }
         /*SHARE PROFILE*/
         async function shareProfile() {
@@ -140,4 +139,5 @@
 </body>
 
 </html>
+
 
