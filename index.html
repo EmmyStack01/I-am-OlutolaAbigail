@@ -94,7 +94,8 @@
         function downloadVCard() {
             // Each line MUST start at the very edge of the left margin. 
             // Do NOT indent these lines or the spaces will break the file.
-            const vcardData = `BEGIN:VCARD
+            const vcardData = `
+        BEGIN:VCARD
         VERSION:3.0
         FN:Olutola Abigail
         TITLE:Communication & Mindset 
@@ -103,7 +104,8 @@
         tola6436@gmail.com
         TEL;TYPE=WORK,CELL,VOICE:
         +2348109577121
-        END:VCARD`;
+        END:VCARD
+        `;
         
             const blob = new Blob([vcardData], { type: 'text/vcard' });
             const url = window.URL.createObjectURL(blob);
@@ -148,6 +150,7 @@
 </body>
 
 </html>
+
 
 
 
