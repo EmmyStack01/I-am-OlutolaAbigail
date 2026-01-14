@@ -90,18 +90,22 @@
     </div>
     
     <script>
-        /*SAVE CONTACT*/
+       /* SAVE CONTACT */
         function downloadVCard() {
-            // Data would be customized for your client
-            const vcardData = 
-            'BEGIN:VCARDVERSION:3.0FN:Olutola AbigailTITLE:Communication & Mindset StrategistEMAIL;TYPE=INTERNET,WORK:tola6436@gmail.comTEL;TYPE=WORK,CELL,VOICE:+2348109577121END:VCARD';
+            // The text MUST start at the very edge of the screen inside the backticks
+            const vcardData = `BEGIN:VCARD
+        VERSION:3.0
+        FN:Olutola Abigail
+        TITLE:Communication & Mindset Strategist
+        EMAIL;TYPE=INTERNET,WORK:tola6436@gmail.com
+        TEL;TYPE=WORK,CELL,VOICE:+2348109577121
+        END:VCARD`;
+        
             const blob = new Blob([vcardData], { type: 'text/vcard' });
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
-            a.style.display = 'none';
             a.href = url;
             a.download = 'Olutola_Abigail.vcf';
-            document.body.appendChild(a);
             a.click();
             window.URL.revokeObjectURL(url);
              // Cleanup
@@ -138,6 +142,7 @@
 </body>
 
 </html>
+
 
 
 
