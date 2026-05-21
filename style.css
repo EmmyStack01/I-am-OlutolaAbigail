@@ -5,9 +5,9 @@
             --accent-color: hsl(271, 76%, 73%);
             --button-hover: #f1c40f;
         }
+* {font-family: 'Inter', system-ui, sans-serif;}
 
         body {
-            font-family: 'Inter', system-ui, sans-serif;
             background-color: var(--primary-bg);
             color: #eeeeee;
             display: flex;
